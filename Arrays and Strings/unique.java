@@ -10,7 +10,7 @@ public class unique {
             char select = text.charAt(i);
     
             for(int j=i+1; j<size; j++) {
-                if(select == charAt(j)) {
+                if(select == text.charAt(j)) {
                     return false;
                 }
             }
@@ -21,9 +21,6 @@ public class unique {
     public static void main(String[] args) {
       System.out.println(isUnique("hello"));
       System.out.println(isUnique("world"));
-    }
-    public static boolean isUnique(String(text)) {
-        return false;
     }
 }
 
@@ -38,7 +35,7 @@ public class unique {
 
 public static boolean isUnique(String text) {
     char[] words = text.toCharArray();
-    Arrays.sort(words);
+    Arrays.sort(words); // Use import java.util.Arrays;
     int size = words.length-1;
     for(int i=0; i<size; i++) {
         if(words[i] == words[i+1]) {
