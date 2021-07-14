@@ -42,8 +42,5 @@ public class removeSpace {
         String str = "Mr John Smith    ";
         replace(str.toCharArray(), str.trim().length());
      
-    }
-
-
-    
+    }   
 }
