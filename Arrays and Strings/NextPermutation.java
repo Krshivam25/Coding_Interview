@@ -8,6 +8,7 @@
 // Time Complexity: O(n)
 // Space Complexity: O(1)
 
+
 public class NextPermutation {
 public void nextperm(int[] A){
     if(A == null || A.length<=1) return;
