@@ -41,4 +41,14 @@ public class DoublyLinkedList {
         }
     }
 
+    public static void main(String[] args) {
+        DoublyLinkedList dd = new DoublyLinkedList();
+        dd.addNode(2);
+        dd.addNode(3);
+        dd.addNode(5);
+        dd.addNode(6);
+
+        dd.display();
+    }
+
 }
