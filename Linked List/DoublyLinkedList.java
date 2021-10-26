@@ -17,11 +17,11 @@ public class DoublyLinkedList {
         Node newNode = new Node(data);
         if (head == null) {
             head = tail = newNode;
-            head.previous = null;
+            head.prev = null;
             tail.next = null;
         } else {
             tail.next = newNode;
-            newNode.previous = tail;
+            newNode.prev = tail;
             tail = newNode;
             tail.next = null;
         }
